@@ -1,0 +1,24 @@
+nav{
+    ul{
+        li{
+            @include estilos;
+            a{
+                transition: border-bottom  0.3s ease, color 0.3s ease ;
+
+                &:hover{
+                    color:$color5;
+                    border-bottom: 2px solid $color2;  
+                }
+            }
+        }
+    }
+}
+
+.logo{
+    @include estilos;
+
+    &:hover{
+        color:$color2;
+    }
+
+}

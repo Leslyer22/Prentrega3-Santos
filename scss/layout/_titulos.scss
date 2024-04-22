@@ -1,0 +1,10 @@
+h1{
+    margin: 20px;
+    font-weight: $weight;
+    text-transform: uppercase;
+    @include shadow;
+}
+
+h2{
+    @extend h1;
+}

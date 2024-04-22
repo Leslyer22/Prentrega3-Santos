@@ -1,0 +1,77 @@
+
+.bienvenidos{
+    display: grid;
+    place-items: center;
+    font-size:42px;
+    background-image: url("../../assets/jk-fondo.webp");
+    background-size: cover;
+    background-position: top center;
+    height: $size1 - 100px;
+}
+
+
+.nosotros{
+    text-align: center;
+    margin: 10%;
+
+    h2{
+        font-size: $size2 + 10px;
+    }
+
+    p{
+        padding: $size2;
+    }
+}
+
+
+.newsletter{
+    @extend .nosotros;
+
+    p{
+        padding: $size2;
+    }
+}
+
+.newsletter {
+    @extend .nosotros;
+
+    p{
+        padding: $size2;
+    }
+
+
+    form{
+
+        [type="email"]{
+            outline: none;
+            width: 450px;
+            border:2px solid $color5;
+            @include element-form;
+    
+            &:hover{
+                box-shadow: 0 0 2px 1px #ffffff;
+            }
+
+    }
+    
+    }
+
+}
+
+.newsletter [type="submit"] {
+    @include element-form;
+    margin-left: 10px;
+    color:  $color2;
+    background-color: $color5;
+    font-family:$font2;
+    border: none;
+    font-weight: $weight;
+
+    &:hover{
+        background-color: #e392ef;
+        box-shadow: 0 0 5px 1px #ffffff;
+}
+
+    }
+
+

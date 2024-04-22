@@ -1,0 +1,30 @@
+
+.sinopsis-contenedor {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+
+    .sinopsis {
+        width: 50%;
+        margin-right: 25px;
+        margin-left: 25px;
+        line-height: 1.3;
+    }
+
+    .trailer {
+        width: 50%;
+        margin-left: 25px;
+
+        iframe{
+            width:  $size1 - 100px;
+            height: calc($size1/2);
+        }
+    }
+
+}
+
+
+
+
+
+

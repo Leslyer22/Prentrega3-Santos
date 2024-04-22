@@ -1,0 +1,14 @@
+a{
+    color:$color2;
+    text-decoration: none;
+}
+
+span{
+    a{
+        &:hover{
+            color:$color5;
+            font-weight: $weight;
+            text-decoration: underline;
+        }
+    }
+}

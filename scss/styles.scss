@@ -1,0 +1,35 @@
+@import "utilities/variables";
+@import "utilities/mixins";
+
+//bases
+@import "base/tipografia";
+@import "base/reset";
+@import "base/base";
+
+//layout
+@import "layout/header";
+@import "layout/footer";
+@import "layout/navbar";
+@import"layout/links";
+@import"layout/titulos";
+@import "layout/parrafos";
+
+//sections
+@import "sections/inicio";
+@import "sections/sinopsis";
+@import "sections/personajes";
+@import "sections/contacto";
+@import "sections/galeria";
+
+//media 
+@import "sections/media.scss";
+
+
+
+
+
+
+
+
+
+

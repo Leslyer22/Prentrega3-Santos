@@ -1,0 +1,83 @@
+
+.contenedor{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .contenedor-p p{
+        width: $size1 - 200px;
+        font-size: $size2;
+    }
+}
+
+
+.formulario{
+    background-color:$color7; 
+    border-radius: 10px;
+    width:30%;
+    height: 420px;
+    padding: 10px;
+    margin: $size2;
+
+    form{
+        padding: $size2 - 10px;
+
+        label{
+            display: block;
+            margin-bottom: $size2;
+
+            span{
+                @include shadow;
+                font-size: 16px;
+            }
+        }
+
+        input{
+            @extend label;
+            @include estilos-2;
+            
+            &:focus{
+                box-shadow: inset 0 0 5px 1px $color5;
+            }
+
+            &[type="submit"]{
+                width: 30%;
+                padding: 8px;
+                border-radius: 5px;
+                border: none;
+                font-weight: 600 ;
+                font-family: $font2;
+                color:$color2;
+                background-color: $color5;
+                margin:10px;
+
+                &:hover{
+                    background-color: $color6;
+                }
+
+            }
+
+        }
+
+        textarea{
+            @include estilos-2;
+            width: 90%;
+            height: 70px;
+            resize: none;
+
+            &:focus{
+                box-shadow: inset 0 0 5px 1px $color5;
+            }
+        }
+
+        .btn2{
+            display: flex;
+            justify-content: center;
+            padding-top: 10px;
+        }
+    }
+}
+
+
+
+
