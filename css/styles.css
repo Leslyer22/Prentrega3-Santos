@@ -296,6 +296,32 @@ p {
   footer .footer-contenido p {
     font-size: 0.8rem;
   }
+  /*contacto*/
+  .contenedor {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .contenedor .contenedor-p p {
+    padding: 10px;
+    width: 100%;
+    font-size: 1rem;
+  }
+  .contenedor .formulario {
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (min-width: 546px) and (max-width: 768px) {
+  /*contacto*/
+  .contenedor .formulario {
+    width: 500px;
+    height: auto;
+    margin: 0 auto;
+    height: auto;
+    margin-bottom: 10px;
+  }
 }
 /*movil y tablet*/
 @media screen and (max-width: 1023px) and (min-width: 320px) {
@@ -380,6 +406,20 @@ p {
   }
   .personajes .pers-info ul li {
     font-size: 1rem;
+  }
+  /*contacto*/
+  .contenedor .contenedor-p p {
+    font-size: 1rem;
+    margin: 5px;
+  }
+  .contenedor .formulario {
+    width: 300px;
+  }
+  .contenedor .formulario input {
+    width: 250px;
+  }
+  .contenedor .formulario textarea {
+    width: 250px;
   }
 }
 

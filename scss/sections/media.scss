@@ -49,8 +49,43 @@ footer{
     }
 }
 
+/*contacto*/
+
+.contenedor{
+    flex-direction: column;
+    align-items: flex-start;
+
+    .contenedor-p{
+        p{
+            padding: 10px;
+            width: 100%;
+            font-size: $size5;
+        }
+    }
+
+    .formulario{
+        width: 90%;
+        margin: 0 auto;
+        height: auto;
+        margin-bottom: 10px;
+    }
+}
 
 }
+
+@media only screen and (min-width: 546px) and (max-width: 768px) {
+    /*contacto*/
+.contenedor{
+    .formulario{
+        width: 500px;
+        height: auto;
+        margin: 0 auto;
+        height: auto;
+        margin-bottom: 10px;
+    }
+}
+}
+
 
 
 /*movil y tablet*/ 
@@ -181,6 +216,35 @@ footer{
 
 }
 
+/*contacto*/
+
+.contenedor{
+    .contenedor-p{
+        p{
+            font-size: $size5;
+            margin: 5px;
+            
+        }
+    }
+    .formulario{
+        width: $size1 - 300px;
+        input{
+            @include form1;
+
+        }
+
+        textarea{
+        @include form1;
+        }
+    }
+
 }
+
+}
+
+
+
+
+
 
 
